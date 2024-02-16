@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>car rentel</title>
+    <link rel="stylesheet" href="calculater.css">
+    <link rel="icon" href="images/car-logo.png">
+</head>
+
+<body>
+    <nav>
+        <div class="navgrid">
+            <div><a href="calculater.html" id="calc">calculater</a></div>
+            <div><a href="dice.html">dice</a></div>
+            <div><a href="passwords.html">passwords</a></div>
+            <div>hey</div>
+            <div>hey</div>
+        </div>
+    </nav>
+        <div class="container">
+            <input class="num" id="num" readonly>
+        <div class="numbers">
+            <div><button onclick="displaycalc('7')">7</button></div>
+            <div><button onclick="displaycalc('8')">8</button></div>
+            <div><button onclick="displaycalc('9')">9</button></div>
+            <div><button class="arthemetique" onclick="displaycalc('/')">/</button></div>
+            <div><button onclick="displaycalc('4')">4</button></div>
+            <div><button onclick="displaycalc('5')">5</button></div>
+            <div><button onclick="displaycalc('6')">6</button></div>
+            <div><button class="arthemetique" onclick="displaycalc('*')">x</button></div>
+            <div><button onclick="displaycalc('1')">1</button></div>
+            <div><button onclick="displaycalc('2')">2</button></div>
+            <div><button onclick="displaycalc('3')">3</button></div>
+            <div><button class="arthemetique" onclick="displaycalc('-')">-</button></div>
+            <div><button onclick="displaycalc('0')">0</button></div>
+            <div><button onclick="displaycalc('.')">.</button></div>
+            <div><button class="arthemetique" onclick="displaycalc('+')">+</button></div>
+            <div><button class="result" onclick="calc()">=</button></div>
+            <div><button class="clear" onclick="clearnum()">C</button></div>
+        </div>
+    </div>
+
+    <script src="calculater.js"></script>
+</body>
+
+</html>
