@@ -97,6 +97,122 @@ function ttl(S, item){
 }
 //-------------------
 
+class products{
+    
+    constructor(name, price){
+        this.name = name;
+        this.price = price;
+    }
+
+    productinfo(){
+        console.log(`price : $${this.price.toFixed(2)}`);
+    }
+
+    total(){
+        return this.price + (this.price * 0.05);
+    }
+}
+//-------------------
+
+class mathutil{
+
+    static PI = 3.14159;
+
+    static getdiameter(radius){
+        return radius * 2;
+    }
+    static getcircumference(radius){
+        return 2 * this.PI * radius
+    }
+}
+
+//-------------------
+class Animal{
+    alive = true;
+
+    eat(){
+        console.log(`${this.name} is eating`);
+    }
+
+    sleep(){
+        console.log(`${this.name} is sleeping`);
+    }
+}
+
+class Rabbit extends Animal{
+    name = "rabbit";
+
+    run(){
+        console.log(`${this.name} is running`);
+    }
+}
+
+class Fish extends Animal{
+    name = "fish";
+
+    swim(){
+    console.log(`${this.name} is swimming`);
+    }
+}
+
+const dog = new Animal("dog");
+const cat = new Animal("cat");
+
+const rabbit = new Rabbit();
+const fish = new Fish();
 
 
-console.log(numbers.reduce(ttl, 0));
+//-------------------
+
+class students{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+
+    printname(name){
+        console.log(`name : ${name}`)
+    }
+    
+    printage(age){
+        console.log(`age is : ${age}`);
+    }
+
+}
+
+class Idris extends students{
+    constructor(name,age,mental){
+        super(name,age);
+        this.mental = mental;
+    }
+
+    info(){
+        console.log(`mental : ${mental}`);
+        super.printname();
+        super.printage();
+    }
+}
+
+//-------------------
+
+const bro = ["amine", "akram", "anis", "idris"];
+
+const [first, second, ...lasttwo] = bro;
+
+const first1 = {
+    bd : 1996,
+    age : 28,
+    job : "employed" 
+}
+
+const second1 = {
+    bd : 2001,
+    age : 23,
+    job : "student" 
+}
+
+const {bd, age, job} = second1;
+
+console.log(job);
+
+
