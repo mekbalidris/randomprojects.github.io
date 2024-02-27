@@ -213,6 +213,31 @@ const second1 = {
 
 const {bd, age, job} = second1;
 
-console.log(job);
+
+//--------------
+
+class Person{
+    constructor(name, age, ...address){
+        this.name = name;
+        this.age = age;
+        this.address = new Address(...address);
+    }
+}
+
+
+
+class Address{
+
+    constructor(street, city, country){
+        this.street = street;
+        this.city = city;
+        this.country = country;
+    }
+
+}
+
+const person1 = new Person("idris", 18, "123", "algeirs", "algeria");
+
+console.log(person1.address.street);
 
 
